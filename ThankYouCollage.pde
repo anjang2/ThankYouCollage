@@ -5,10 +5,11 @@ PImage white;
 void setup() {
   size(900, 600);
   background(#FFFFFF);
+  house=loadImage("4.jpg");
+  ty=loadImage("download.jpg");
 }
 void draw() {
   if (mousePressed) {
-    house=loadImage("4.jpg");
     image(house, 225, 150, width/2, height/2);
     textSize(30);
     fill(0, 0, 0);
@@ -18,7 +19,6 @@ void draw() {
     textSize(250);
     text("♥", 675, 300);
   } else {
-    ty=loadImage("download.jpg");
     image(ty, 225, 150, width*1/2, height*1/2);
      background(0,0,0);
 
