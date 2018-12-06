@@ -7,6 +7,7 @@ void setup() {
   background(#FFFFFF);
   house=loadImage("4.jpg");
   ty=loadImage("download.jpg");
+  white=loadImage("white.jpg");
 }
 void draw() {
   if (mousePressed) {
@@ -23,7 +24,6 @@ void draw() {
      background(0,0,0);
 
   }
-       white=loadImage("white.jpg");
   image(white, mouseX, mouseY, width/6, height/6);
     translate(width/2, height/2);
     rotate(PI/1.0);
